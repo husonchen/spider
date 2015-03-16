@@ -14,5 +14,8 @@ def getHtml(url):
 def getBoardHtml(page):
     return getHtml("http://bt8.nl/ebook.php?page="+str(page)+"&type=&book=")
 
+def getAvHtml(page):
+    return getHtml("http://bt8.nl/av.php?page="+str(page))
+
 if __name__ == '__main__':
     getBoardHtml(1)
